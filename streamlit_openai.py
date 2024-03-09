@@ -75,7 +75,8 @@ if prompt := st.chat_input():
         if run.status == "completed":
             break
         else:
-            time.sleep(2)
+            with st.spinner("자료를 검토중입니다"):
+                time.sleep(1)
     print(run)
 
     thread_messages = client.beta.threads.messages.list(thread_id)
