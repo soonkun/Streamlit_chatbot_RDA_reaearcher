@@ -2,6 +2,10 @@ from openai import OpenAI
 import streamlit as st
 import pandas as pd
 import time
+import os
+
+assistant_id = "asst_GwRek9mA8y7YCDMoysGV9nb6"
+openai_api_key = os.getenv('OPENAI_API_KEY')
 
 # 스레드 ID를 저장하고 관리하기 위한 session_state 초기화
 if "thread_id" not in st.session_state:
