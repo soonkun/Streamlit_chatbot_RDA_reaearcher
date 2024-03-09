@@ -3,9 +3,6 @@ import streamlit as st
 import pandas as pd
 import time
 
-assistant_id = "asst_GwRek9mA8y7YCDMoysGV9nb6"
-openai_api_key = "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"
-
 # 스레드 ID를 저장하고 관리하기 위한 session_state 초기화
 if "thread_id" not in st.session_state:
     st.session_state.thread_id = ""
