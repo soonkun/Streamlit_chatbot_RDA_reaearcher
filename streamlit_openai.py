@@ -12,9 +12,6 @@ if "thread_id" not in st.session_state:
     st.session_state.thread_id = ""
     
 with st.sidebar:
-    # openai_api_key = st.text_input("OpenAI API Key", key="chatbot_api_key", type="password", 
-    #                                value="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")
-    # "[Get an OpenAI API key](https://platform.openai.com/account/api-keys)"
         
     #thread_id = st.text_input("Thread ID")
 
