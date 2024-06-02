@@ -71,7 +71,7 @@ if prompt := st.chat_input():
             )
         if run.status == "completed":
             break
-        else:
+        #else:
         #    with st.spinner("자료를 검토중입니다"):
         #        time.sleep(0.5)
     print(run)
