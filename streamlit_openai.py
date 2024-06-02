@@ -27,8 +27,8 @@ with st.sidebar:
     
     thread_id = st.session_state.thread_id
 
-st.title("💬 새싹이")
-st.caption("쳇봇을 통해 농촌진흥청 담당자를 찾아보세요.")
+st.title("💬 농촌진흥청 새싹이예요 🌱")
+st.caption("챗봇을 통해 농촌진흥청 담당자를 찾아보세요.🔍")
 if "messages" not in st.session_state:
     st.session_state["messages"] = [{"role": "assistant", "content": "안녕하세요! 무엇이 궁금하신가요?"},
     {"role": "assistant", "content": "왼쪽 위에 ' > '를 눌러 스레드를 생성하고 문의사항을 입력해주세요."}]
@@ -72,8 +72,8 @@ if prompt := st.chat_input():
         if run.status == "completed":
             break
         else:
-            with st.spinner("자료를 검토중입니다"):
-                time.sleep(1)
+        #    with st.spinner("자료를 검토중입니다"):
+        #        time.sleep(0.5)
     print(run)
 
     thread_messages = client.beta.threads.messages.list(thread_id)
